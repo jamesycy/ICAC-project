@@ -1,0 +1,177 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../image/background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrap {
+  width: 65%;
+  height: 45%;
+  margin: 0 auto;
+  position: relative;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 2px solid black; */
+  align-items: center;
+}
+
+.question-num {
+  width: 5%;
+  padding-top: 5px;
+}
+
+.question {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: white;
+  width: 95%;
+}
+
+.end-section {
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: white;
+  width: 95%;
+}
+
+#question {
+  width: 95%;
+}
+
+.choices {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice {
+  margin-bottom: 25px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choices input, .startbtn, .endbtn {
+  font-size: 1.6em;
+  padding: 10px;
+  background-color: #61B329;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.start-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-btn {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #5bc0de;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.end-back-btn {
+  font-size: 0.6em;
+  padding: 10px;
+  background-color: #5bc0de;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.endbtn {
+  width: 40%;
+}
+
+.choices input:hover, .startbtn:hover, .endbtn:hover {
+  cursor: pointer;
+}
+
+.correct {
+  color: green;
+}
+
+img {
+  width: 35px;
+  height: 35px;
+  margin-left: 5px;
+  opacity: 0;
+  z-index: 2;
+}
+
+@media (max-width: 1366px) {
+  .choices input {
+    font-size: 1.4em;
+  }
+  #question {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrap {
+    width: 85%;
+  }
+  .question, .question-num {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 1920px) {
+  .choices input {
+    font-size: 1.6em;
+    padding: 15px 20px;
+  }
+
+  .question, .question-num {
+    font-size: 1.6em;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .choices input {
+    font-size: 1em;
+  }
+
+  .question, .question-num {
+    font-size: 1.15em;
+  }
+
+  .choice {
+    width: 100%;
+  }
+
+  .wrap {
+    width: 85%;
+  }
+}

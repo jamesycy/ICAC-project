@@ -1,0 +1,30 @@
+//output: q1.html
+doctype html
+html
+  header
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title Test Game
+    link(rel="stylesheet" href="css/index.css")
+    script(src="javascript/taffy.js")
+    script(src="javascript/jqeury.js")
+    script(src="javascript/index.js")
+    
+  body
+    div.wrap
+      section.question
+        h1#question 
+      section.choices
+        .choice
+          input(type="button" value=""  class="" id="answer1")
+          img(src="image/cross.png")
+        .choice  
+          input(type="button" value="" class="" id="answer2")
+          img(src="image/cross.png")
+      section.choices
+        .choice  
+          input(type="button" value="" class="" id="answer3")
+          img(src="image/cross.png")
+        .choice
+          input(type="button" value="" class="" id="answer4")
+          img(src="image/cross.png")

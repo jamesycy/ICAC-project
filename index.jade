@@ -1,0 +1,23 @@
+//output: index.html
+doctype html
+html
+  header
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title Test Game
+    link(rel="stylesheet" href="css/index.css")
+    
+  body
+    .container
+      .frame
+        .left-wrap.item.count
+          img(src="image/ico-left.png")
+        .mid-wrap.item.count
+          img(src="image/ico-mid.png")
+        .right-wrap.item.count
+          img(src="image/ico-right.png")
+      .play-count
+        h1#counts
+          
+          script(src="javascript/jquery.js")
+          script(src="javascript/index.js")
